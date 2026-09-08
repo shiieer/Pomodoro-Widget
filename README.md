@@ -1,4 +1,4 @@
-﻿# Pomodoro Widget
+# Pomodoro Widget
 
 A minimal, always-on-top Pomodoro timer widget for your desktop — built with Python and PyQt6.  
 Drop a GIF or image for each phase and keep focused in style.
@@ -113,7 +113,7 @@ Copy the example to get started:
 
 ## 📁 Project Structure
 
-`
+```
 pomodoro_widget/
 ├── main.py                  # Entry point
 ├── config.py                # Paths & default settings
@@ -134,6 +134,6 @@ pomodoro_widget/
         ├── media_preview.py # Drag-and-drop image preview
         ├── sidebar.py       # Settings navigation sidebar
         └── style.py         # QSS stylesheet
-`
+```
 
 ---
