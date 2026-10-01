@@ -1,5 +1,5 @@
+from collections.abc import Callable
 from enum import Enum
-from typing import Callable
 
 
 class Phase(str, Enum):
@@ -72,6 +72,8 @@ class PomodoroTimer:
         if self.remaining > 0:
             self.remaining -= 1
             self.on_tick(self.remaining, self.phase)
+            if self.remaining == 0:
+                self._advance_phase()
             return
         self._advance_phase()
 

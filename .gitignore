@@ -1,4 +1,4 @@
-﻿# Python
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
@@ -8,35 +8,48 @@ __pycache__/
 dist/
 build/
 *.spec
+*.whl
 
-# Virtual environment
+# ── Virtual environments ──────────────────────────────────────────────────────
 venv/
 .venv/
 env/
 .env/
+ENV/
 
-# IDE / editor
+# ── IDE / editor ──────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# PyInstaller
+# ── PyInstaller ───────────────────────────────────────────────────────────────
 *.manifest
 
-# User settings (contains personal local paths - do not commit)
-settings.json
-
-# Logs
-*.log
-
-# pytest / coverage
+# ── Testing & coverage ────────────────────────────────────────────────────────
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+coverage.xml
+*.cover
 
-# User GIF/image assets (personal media files)
+# ── Linters / formatters ──────────────────────────────────────────────────────
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ── User runtime data (personal, local only) ──────────────────────────────────
+settings.json
+# Tasks contain personal task data
+tasks.json
+
+# ── User media assets ─────────────────────────────────────────────────────────
 assets/gifs/*
 !assets/gifs/.gitkeep
